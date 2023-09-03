@@ -13,14 +13,18 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {},
     "useDefineForClassFields": false,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "study-decision-tree-helpers": [
+        "study-decision-tree-helpers/src/index.ts"
+      ]
+    }
   },
   "files": [],
   "include": [],

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "TreeFormData",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "filePath": {
+      "type": "string",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "The filepath of the yaml containing the decision tree."
+    }
+  },
+  "required": ["filePath"]
+}

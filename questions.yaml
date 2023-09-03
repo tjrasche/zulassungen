@@ -1,0 +1,28 @@
+headline: "In welchem Land haben Sie Ihren letzten Bildungsabschluss erworben?"
+subtext: "Possible Subtext."
+options:
+  - text: Afghanistan
+    headline: "Zeugnis"
+    subtext:
+  - text: Albania
+  - text: Algeria
+  - text: Andorra
+  - text: Angola
+  - text: Antigua & Deps
+  - text: Argentina
+  - text: Armenia
+  - text: Australia
+  - text: Austria
+  - text: Azerbaijan
+  - text: Bahamas
+  - text: Bahrain
+  - text: Bangladesh
+  - text: Barbados
+  - text: Belarus
+  - text: Belgium
+  - text: Belize
+  - text: Benin
+  - text: Bhutan
+  - text: Bolivia
+  - text: "Bosnia Herzegovina"
+  - text: Botswana

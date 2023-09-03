@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "tree-form-data": {
+      "factory": "./src/generators/tree-form-data/generator",
+      "schema": "./src/generators/tree-form-data/schema.json",
+      "description": "tree-form-data generator"
+    }
+  }
+}
