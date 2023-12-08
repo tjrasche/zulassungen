@@ -4,30 +4,12 @@ import * as YAML from 'yaml';
 import { v4 as uuidv4 } from 'uuid';
 import * as path from 'path';
 import { TreeFormDataGeneratorSchema } from './schema';
-
-interface ITreeData {
-  subtext?: string | undefined | null;
-  headline?: string;
-  text?: string;
-}
-
-interface IRawTreeData extends ITreeData {
-  options?: ITreeData[] | undefined | null;
-}
-
-interface IParsedTreeData extends ITreeData {
-  parentId: string | undefined;
-  childIds: string[];
-}
-
-interface IDictionary<T> {
-  [key: string]: T;
-}
-
-interface IFlatTree<T> {
-  rootId: string;
-  entries: IDictionary<T>;
-}
+import {
+  IDictionary,
+  IFlatTree,
+  IParsedTreeData,
+  IRawTreeData,
+} from '../../../../src/app/types/tree-data.interface';
 
 export async function treeFormDataGenerator(
   tree: Tree,
@@ -59,7 +41,7 @@ export async function treeFormDataGenerator(
 const flattenEntries = (
   root: IRawTreeData,
   rootId: string,
-  parentId: string | undefined
+  parentId: string | undefined | null
 ): IDictionary<IParsedTreeData> => {
   let returnDict: IDictionary<IParsedTreeData> = {};
   const firstLevelEntries = root.options;
@@ -74,8 +56,12 @@ const flattenEntries = (
     }
   }
   delete root.options;
-  console.log(rootId);
-  returnDict[rootId] = { ...root, parentId, childIds };
+  returnDict[rootId] = {
+    ...(root as IParsedTreeData),
+    parentId: parentId ?? null,
+    childIds: childIds,
+    id: rootId,
+  };
   return returnDict;
 };
 
