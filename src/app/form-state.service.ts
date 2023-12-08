@@ -25,8 +25,12 @@ export class FormStateService {
     })
   );
 
-  newIdSelected(id: string) {
-    this.selectedIds$.next([...this.selectedIds$.value, id]);
+  newIdSelected(id: string, sourceId: string) {
+    const currentValue = this.selectedIds$.value;
+    const startIndex = currentValue.indexOf(sourceId);
+    // remove all elements from array behind the source id
+    currentValue.length = startIndex + 1;
+    this.selectedIds$.next([...currentValue, id]);
   }
 
   constructor() {}

@@ -1,5 +1,5 @@
 <app-single-form-element
   *ngFor="let currentFormElement of currentForm$ | async"
   [question]="currentFormElement"
-  (idSelected)="idSelected($event)"
+  (idSelected)="idSelected($event, currentFormElement.id)"
 ></app-single-form-element>

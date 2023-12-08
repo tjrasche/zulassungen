@@ -2,6 +2,8 @@ export interface ITreeData {
   subtext?: string | undefined | null;
   headline?: string;
   text?: string;
+  question?: string;
+  resolution?: string;
 }
 
 export interface IRawTreeData extends ITreeData {

@@ -1,11 +1,22 @@
-headline: "In welchem Land haben Sie Ihren letzten Bildungsabschluss erworben?"
+headline: "Zeugnis"
+question: "In welchem Land haben Sie Ihren letzten Bildungsabschluss erworben?"
 subtext: "Possible Subtext."
 options:
   - text: Afghanistan
     headline: "Zeugnis"
-    subtext: "dIES IST EIN TEXT"
+    subtext: "Dies ist ein Test"
+    question: "An welcher institution haben sie ihren Abschluss in Afghanistan erworben?"
     options:
-      - text: universitas testitonis
+      - text: Universitas Testitonis
+        question: Welchen studiengang haben sie besucht?
+        headline: "Studiengang"
+        options:
+          - text: Wirtschaft
+            resolution: "Sie dürfen alle Studiengänge in Deutschland besuchen!"
+          - text: Sprengstoffkunde
+            resolution: "Sie dürfen keine Studiengänge in Deutschland besuchen!"
+
+
 
   - text: Albania
   - text: Algeria

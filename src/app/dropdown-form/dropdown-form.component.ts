@@ -10,7 +10,7 @@ export class DropdownFormComponent {
   constructor(private formStateService: FormStateService) {}
   currentForm$ = this.formStateService.currentForm$;
 
-  idSelected(id: string) {
-    this.formStateService.newIdSelected(id);
+  idSelected(id: string, sourceId: string) {
+    this.formStateService.newIdSelected(id, sourceId);
   }
 }
