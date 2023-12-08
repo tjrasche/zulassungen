@@ -15,28 +15,49 @@ options:
             resolution: "Sie dürfen alle Studiengänge in Deutschland besuchen!"
           - text: Sprengstoffkunde
             resolution: "Sie dürfen keine Studiengänge in Deutschland besuchen!"
+  - text: Frankreich
+    headline: "Zeugnis"
+    subtext: "Dies ist ein weiterer Test Test"
+    question: "An welcher institution haben sie ihren Abschluss in Frankreich erworben?"
+    options:
+      - text: L'Universié de Tester
+        question: Welchen studiengang haben sie besucht?
+        headline: "Studiengang"
+        options:
+          - text: Wirtschaft
+            resolution: "Sie dürfen alle Studiengänge in Deutschland besuchen!"
+          - text: Baguettekunde
+            headline: "Sauerteigerfahrung"
+            subtext: "In deutschland backt man nicht nur Baguettes!"
+            question: "Haben sie alle Zertifikate nach Backereiverodnung 17b zum erzeugen qualitativen Sauerbrotteigs?"
+            options:
+              - text: "Ja ich besitze alle"
+                resolution: "Sie dürfen alle Studiengänge in Deutschland besuchen!"
+              - text: "Nein, aber ich habe alle ausser 17b-1 'Sauerteigkrusten in der Geschichte Deutschlands'"
+                resolution: "Sie dürfen alle Studiengänge in Deutschland welche von Bäckereifachhochschulen ohne Krustenprädikat angeboten werden besuchen!"
+              - text: "Nein"
+                resolution: "Sie dürfen keine Studiengänge in Deutschland besuchen!"
+
+  - text: Italien
+    headline: "Zeugnis"
+    subtext: "Dies ist ein Test"
+    question: "An welcher institution haben sie ihren Abschluss in Afghanistan erworben?"
+    options:
+      - text: La  Universita d'el Don
+        question: Welchen studiengang haben sie besucht?
+        headline: "Studiengang"
+        options:
+          - text: Wirtschaft
+            resolution: "Sie dürfen alle Studiengänge in Deutschland besuchen!"
+          - text: Pastakunde
+            resolution: "Sie dürfen alle Studiengänge in Deutschland besuchen!"
+      - text: La  Universita d'ella Donna
+        question: Welchen studiengang haben sie besucht?
+        headline: "Studiengang"
+        options:
+          - text: Wirtschaft
+            resolution: "Sie dürfen alle Studiengänge in Deutschland besuchen!"
+          - text: Pastakunde
+            resolution: "Sie dürfen keine Studiengänge in Deutschland besuchen!"
 
 
-
-  - text: Albania
-  - text: Algeria
-  - text: Andorra
-  - text: Angola
-  - text: Antigua & Deps
-  - text: Argentina
-  - text: Armenia
-  - text: Australia
-  - text: Austria
-  - text: Azerbaijan
-  - text: Bahamas
-  - text: Bahrain
-  - text: Bangladesh
-  - text: Barbados
-  - text: Belarus
-  - text: Belgium
-  - text: Belize
-  - text: Benin
-  - text: Bhutan
-  - text: Bolivia
-  - text: "Bosnia Herzegovina"
-  - text: Botswana
