@@ -7,7 +7,7 @@
     <mat-card-content>
       <p>{{ question?.question }}</p>
       <p>
-        <mat-form-field>
+        <mat-form-field appearance="outline" class="form-field">
           <mat-label>Auswählen</mat-label>
           <mat-select (selectionChange)="idSelected.emit($event.value)">
             <mat-option
