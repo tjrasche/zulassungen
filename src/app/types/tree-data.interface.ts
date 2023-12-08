@@ -1,6 +1,6 @@
-export interface TreeData {
+export interface ITreeData {
   headline?: string | null;
   subtext?: string | null;
   text?: string | null;
-  options?: TreeData[] | null;
+  options?: ITreeData[] | null;
 }
