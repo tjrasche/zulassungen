@@ -10,12 +10,11 @@ export class FormStateService {
   formTree: IFlatTree<IParsedTreeData> = treeData;
   selectedIds$ = new BehaviorSubject<string[]>([this.formTree.rootId]);
   currentForm$ = this.selectedIds$.pipe(
-    map((id) => {
+    map((id, i) => {
       // map ids to values
       const treeElements = id.map((val) => this.formTree.entries[val]);
 
       // enrich with child elements
-
       return treeElements.map((value) => ({
         ...value,
         options: value.childIds.map(

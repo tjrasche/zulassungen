@@ -4,6 +4,7 @@ import {
   ElementRef,
   EventEmitter,
   Input,
+  OnInit,
   Output,
 } from '@angular/core';
 import { IParsedTreeData } from '../types/tree-data.interface';
@@ -17,6 +18,7 @@ export class SingleFormElementComponent implements AfterViewInit {
   @Input() question: IParsedTreeData | undefined;
   @Output() idSelected = new EventEmitter<string>();
   constructor(private ref: ElementRef) {}
+
   ngAfterViewInit(): void {
     const element = this.ref.nativeElement;
     if (element) element.scrollIntoView({ behavior: 'smooth', block: 'start' });
